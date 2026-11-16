@@ -1,0 +1,49 @@
+body {
+    background-color: #f4f5f6;
+    color: #2d3748;
+}
+
+.nav-link-custom {
+    color: #cbd5e0;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-link-custom:hover {
+    color: #ffffff;
+}
+
+.nav-link-custom.active {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.filter-row .filter-btn {
+    margin: 4px;
+    color: #224569;
+    border-color: #224569;
+}
+
+.filter-row .filter-btn:hover {
+    background-color: #224569;
+    color: #ffffff;
+}
+
+.filter-row .filter-btn.active {
+    background-color: #224569;
+    color: #ffffff;
+    border-color: #224569;
+}
+
+.portfolio-card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.about-section {
+    max-width: 700px;
+}
+
+.contact-form {
+    max-width: 500px;
+}

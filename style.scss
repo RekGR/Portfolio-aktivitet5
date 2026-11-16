@@ -1,0 +1,55 @@
+$color-primary: #224569;
+$color-bg: #f4f5f6;
+$color-text-dark: #2d3748;
+
+body {
+    background-color: $color-bg;
+    color: $color-text-dark;
+}
+
+.nav-link-custom {
+    color: #cbd5e0;
+    text-decoration: none;
+    margin-left: 20px;
+
+    &:hover {
+        color: #ffffff;
+    }
+
+    &.active {
+        color: #ffffff;
+        font-weight: bold;
+    }
+}
+
+.filter-row {
+    .filter-btn {
+        margin: 4px;
+        color: $color-primary;
+        border-color: $color-primary;
+
+        &:hover {
+            background-color: $color-primary;
+            color: #ffffff;
+        }
+
+        &.active {
+            background-color: $color-primary;
+            color: #ffffff;
+            border-color: $color-primary;
+        }
+    }
+}
+
+.portfolio-card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.about-section {
+    max-width: 700px;
+}
+
+.contact-form {
+    max-width: 500px;
+}

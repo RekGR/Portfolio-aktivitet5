@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekan Goran - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1">Rekan Goran</span>
+            <div>
+                <a href="index.html" class="nav-link-custom active">Galleri</a>
+                <a href="om.html" class="nav-link-custom">Om mig</a>
+                <a href="kontakt.html" class="nav-link-custom">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <header class="text-center mb-4">
+            <h1>Mitt bildgalleri</h1>
+            <p>Filtrera projekten efter kategori.</p>
+        </header>
+
+        <!-- FILTERKNAPPAR -->
+        <div class="filter-row text-center mb-4" role="group" aria-label="Filtrera galleriet efter kategori">
+            <button class="btn btn-outline-primary filter-btn active" data-filter="alla">Alla</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="webb">Webb</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="grafik">Grafik</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="foto">Foto</button>
+        </div>
+
+        <!-- GALLERI -->
+        <div class="row g-4" id="galleri">
+
+            <div class="col-12 col-md-6 col-lg-4 gallery-item" data-category="webb">
+                <div class="card h-100 portfolio-card">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Portfoliosida (skoluppgift)</h2>
+                        <p class="card-text">Responsiv portfolio byggd med Bootstraps grid och komponenter.</p>
+                        <span class="badge bg-primary">Webb</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 gallery-item" data-category="webb">
+                <div class="card h-100 portfolio-card">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Multimediasida</h2>
+                        <p class="card-text">Egen mediaspelare och interaktiv canvas-grafik med JavaScript.</p>
+                        <span class="badge bg-primary">Webb</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 gallery-item" data-category="grafik">
+                <div class="card h-100 portfolio-card">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Logotypskiss</h2>
+                        <p class="card-text">Enkel grafisk profil, skapad som övning i form och färg.</p>
+                        <span class="badge bg-success">Grafik</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 gallery-item" data-category="grafik">
+                <div class="card h-100 portfolio-card">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Posterdesign</h2>
+                        <p class="card-text">Komposition och typografi i en affischlayout.</p>
+                        <span class="badge bg-success">Grafik</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 gallery-item" data-category="foto">
+                <div class="card h-100 portfolio-card">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Stadsbilder</h2>
+                        <p class="card-text">Ett urval gatufoton tagna under hösten.</p>
+                        <span class="badge bg-warning text-dark">Foto</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 gallery-item" data-category="foto">
+                <div class="card h-100 portfolio-card">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Naturmotiv</h2>
+                        <p class="card-text">Landskapsfoton från en vandring i skogen.</p>
+                        <span class="badge bg-warning text-dark">Foto</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <p id="empty-message" class="text-center mt-4 d-none">Inga projekt i den här kategorin än.</p>
+    </main>
+
+    <footer class="text-center py-4 text-muted">
+        <p>&copy; 2026 Rekan Goran</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
